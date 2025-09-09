@@ -1,0 +1,80 @@
+body {
+  border: 2px solid black;
+  font-family: "Arial";
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+header {
+  align-items: center;
+  border-bottom: 2px solid black;
+  display: flex;
+  justify-content: space-between;
+  padding: 2px 20px;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: col;
+  font-size: 1.1em;
+  gap: 30px;
+  list-style: none;
+}
+
+main {
+  flex: 1;
+}
+
+main section.banner {
+  background: #d3d3d3;
+  border: 2px solid black;
+  margin: 30px;
+  padding: 60px;
+}
+
+main section.banner h2 {
+  font-size: 2em;
+  text-align: justify;
+  margin: 0 auto;
+}
+
+main section.lista-producto {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+main section.lista-producto h2 {
+  font-size: 2em;
+  margin-left: 40px;
+  width: 100%;
+}
+
+main section.lista-producto article {
+  padding: 10px;
+}
+
+main section.lista-producto article img {
+  width: 200px;
+  height: 200px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+main section.lista-producto p {
+  font-size: 1.3em;
+}
+
+main section.lista-producto article button {
+  width: 100%;
+  border: 1px solid black;
+  border-radius: 5px;
+  font-size: 20px;
+  padding: 5px;
+}
+
+footer {
+  border-top: 2px solid black;
+  padding: 20px;
+  text-align: center;
+}
