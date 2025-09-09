@@ -3,17 +3,39 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>MANACO - Calzado</title>
+
+    <!-- SEO -->
+    <title>MANACO - Zapatos deportivos, casuales y formales</title>
+    <meta
+      name="description"
+      content="Descubre MANACO: calzado deportivo, casual y formal de alta calidad. Compra zapatos cómodos y estilosos con envío rápido y seguro."
+    />
+
+    <!-- Open Graph-->
+    <meta
+      property="og:title"
+      content="MANACO - Zapatos deportivos, casuales y formales"
+    />
+    <meta
+      property="og:description"
+      content="Descubre MANACO: calzado deportivo, casual y formal de alta calidad. Compra zapatos cómodos y estilosos con envío rápido y seguro."
+    />
+    <meta
+      property="og:image"
+      content="https://via.placeholder.com/1200x630.png?text=MANACO+Zapatos"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://tusitio.com" />
+
     <link href="style.css" rel="stylesheet" />
+    <!-- Estilos para accesibilidad -->
     <style>
       /* Foco visible claro para accesibilidad */
       a:focus,
       button:focus {
         outline: 3px solid #005fcc;
         outline-offset: 2px;
-      }
-
-      /* Skip link visible solo al enfocar */
+      } /* Skip link visible solo al enfocar */
       .skip-link {
         position: absolute;
         top: -40px;
@@ -24,16 +46,12 @@
         z-index: 100;
         text-decoration: none;
       }
-
       .skip-link:focus {
         top: 0;
       }
     </style>
   </head>
   <body>
-    <!-- Skip link para saltar directamente al contenido principal -->
-    <a href="#maincontent" class="skip-link">Saltar al contenido</a>
-
     <header>
       <h1>MANACO</h1>
       <nav aria-label="Menú principal">
@@ -56,7 +74,7 @@
         <article class="producto">
           <img src="./zapato1.jpg" alt="Zapato deportivo modelo 1 color azul" />
           <div class="datos-producto">
-            <h3>Zapato Deportivo 1</h3>
+            <h3>Producto 1</h3>
             <p>$00.00</p>
           </div>
           <button class="boton">Comprar</button>
@@ -65,7 +83,7 @@
         <article class="producto">
           <img src="./zapato2.jfif" alt="Zapato casual modelo 2 color negro" />
           <div class="datos-producto">
-            <h3>Zapato Casual 2</h3>
+            <h3>Producto 2</h3>
             <p>$00.00</p>
           </div>
           <button class="boton">Comprar</button>
@@ -74,7 +92,7 @@
         <article class="producto">
           <img src="./zapato3.jfif" alt="Zapato formal modelo 3 color marrón" />
           <div class="datos-producto">
-            <h3>Zapato Formal 3</h3>
+            <h3>Producto 3</h3>
             <p>$00.00</p>
           </div>
           <button class="boton">Comprar</button>
