@@ -1,56 +1,88 @@
 <!doctype html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title></title>
+    <title>MANACO - Calzado</title>
     <link href="style.css" rel="stylesheet" />
+    <style>
+      /* Foco visible claro para accesibilidad */
+      a:focus,
+      button:focus {
+        outline: 3px solid #005fcc;
+        outline-offset: 2px;
+      }
+
+      /* Skip link visible solo al enfocar */
+      .skip-link {
+        position: absolute;
+        top: -40px;
+        left: 0;
+        background: #005fcc;
+        color: white;
+        padding: 8px;
+        z-index: 100;
+        text-decoration: none;
+      }
+
+      .skip-link:focus {
+        top: 0;
+      }
+    </style>
   </head>
   <body>
+    <!-- Skip link para saltar directamente al contenido principal -->
+    <a href="#maincontent" class="skip-link">Saltar al contenido</a>
+
     <header>
       <h1>MANACO</h1>
-      <nav>
+      <nav aria-label="Menú principal">
         <ul>
-          <li>Inicio</li>
-          <li>Servicios</li>
-          <li>Contacto</li>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#contacto">Contacto</a></li>
         </ul>
       </nav>
     </header>
 
-    <main>
-      <section class="banner">
+    <main id="maincontent">
+      <section class="banner" aria-label="Sección de banner">
         <h2>Calzado que impulsa tu paso</h2>
       </section>
-      <section class="lista-producto">
+
+      <section class="lista-producto" aria-label="Lista de productos">
         <h2>Productos</h2>
+
         <article class="producto">
-          <img src="./zapato1.jpg" alt="" />
+          <img src="./zapato1.jpg" alt="Zapato deportivo modelo 1 color azul" />
           <div class="datos-producto">
-            <h3>Producto 1</h3>
+            <h3>Zapato Deportivo 1</h3>
             <p>$00.00</p>
           </div>
           <button class="boton">Comprar</button>
         </article>
+
         <article class="producto">
-          <img src="./zapato2.jfif" alt="" />
+          <img src="./zapato2.jfif" alt="Zapato casual modelo 2 color negro" />
           <div class="datos-producto">
-            <h3>Producto 1</h3>
+            <h3>Zapato Casual 2</h3>
             <p>$00.00</p>
           </div>
           <button class="boton">Comprar</button>
         </article>
+
         <article class="producto">
-          <img src="./zapato3.jfif" alt="" />
+          <img src="./zapato3.jfif" alt="Zapato formal modelo 3 color marrón" />
           <div class="datos-producto">
-            <h3>Producto 1</h3>
+            <h3>Zapato Formal 3</h3>
             <p>$00.00</p>
           </div>
           <button class="boton">Comprar</button>
         </article>
       </section>
     </main>
-    <footer>
+
+    <footer aria-label="Pie de página">
       <h3>Copyright 2025 MANACO</h3>
     </footer>
   </body>
