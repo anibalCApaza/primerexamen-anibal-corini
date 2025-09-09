@@ -29,6 +29,14 @@ header nav ul {
   list-style: none;
 }
 
+.hamburger {
+  display: none; /* solo se muestra en móviles */
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 main {
   flex: 1;
 }
@@ -84,4 +92,68 @@ footer {
   border-top: 2px solid black;
   padding: 20px;
   text-align: center;
+}
+
+@media (width<=700px) {
+  h1 {
+    color: red;
+  }
+
+  footer {
+    color: blue;
+  }
+  main section.banner {
+    display: none;
+  }
+  .hamburger {
+    display: flex;
+    position: absolute;
+    right: 20px;
+  }
+  main section.lista-producto h2 {
+    margin-left: 10px;
+  }
+
+  main section.lista-producto {
+    margin: 20px;
+    gap: 20px;
+  }
+  main section.lista-producto article {
+    border: 2px solid black;
+    border-radius: 10px;
+    display: flex;
+    padding: 0px;
+    width: 100%;
+  }
+  main section.lista-producto article img {
+    width: 100px;
+    height: 100px;
+    border-top: none;
+    border-left: none;
+  }
+
+  main section.lista-producto article .datos-producto {
+    padding: 10px 30px;
+  }
+
+  main section.lista-producto article button {
+    display: none;
+  }
+
+  header nav ul {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 10px;
+    background: #f5f5f5;
+    list-style: none;
+    padding: 10px;
+    border: 1px solid #ccc;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .hamburger:hover + nav ul {
+    display: flex;
+  }
 }
